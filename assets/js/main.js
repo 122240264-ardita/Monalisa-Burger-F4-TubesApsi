@@ -261,7 +261,7 @@ if (contactForm) {
       );
 
       const data = await response.json();
-
+alert(JSON.stringify(data));
       if (response.ok && (data.success === 'true' || data.success === true)) {
         success.style.display = 'block';
         contactForm.reset();
